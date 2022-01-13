@@ -1,0 +1,269 @@
+@import "confiq";
+@import "utilies";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    $font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    font-size: 2rem;
+    h3 span {
+        color: $primary-color;
+    }
+    .fas {
+        color: $primary-color;
+        margin-right: 0.5rem;
+    }
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    .icons {
+        margin-left: auto;
+        padding: 1rem;
+        .fas {
+            margin: 0.5rem;
+            color: rgb(218, 18, 18);
+        }
+    }
+}
+
+// Home
+#home {
+    &-a {
+        .healthy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            .content {
+                max-width: 400px;
+                h1 {
+                    font-size: 3rem;
+                }
+                p {
+                    padding: 1rem 0;
+                }
+            }
+            img {
+                height: 25rem;
+            }
+        }
+    }
+    &-b {
+        .specials {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            img {
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+            }
+            h3 {
+                padding: 0.5rem 0;
+            }
+        }
+    }
+    &-c {
+        .fresh {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img {
+                width: 50%;
+            }
+            div {
+                max-width: 20rem;
+                h3 {
+                    font-size: 2rem;
+                }
+                p {
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
+    &-d {
+        .paid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.2rem;
+            .box {
+                position: relative;
+                background: #fff;
+                border-radius: 1rem;
+            }
+            img {
+                width: 100%;
+                border-radius: 1rem;
+                height: 15rem;
+            }
+            ul {
+                margin-top: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.5rem;
+                padding-bottom: 0.5rem;
+                margin: 0 0.3rem;
+            }
+            .top {
+                padding: 0.3rem;
+                background-color: #fff;
+                width: 70px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-bottom-right-radius: 50px;
+                .fas {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    &-e {
+        .cooked {
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.3rem;
+                padding: 1rem 0;
+            }
+            li {
+                list-style: none;
+                .fas {
+                    margin: 0.3rem;
+                    background: $primary-color;
+                    color: #fff;
+                    padding: 3px;
+                }
+            }
+        }
+    }
+    &-f {
+        .customers {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            h1 {
+                font-size: 3rem;
+            }
+            .png-image img {
+                width: 100%;
+            }
+            .row {
+                padding: 2rem 0;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+            }
+            .fas {
+                color: coral;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+#main-footer {
+    background: #333;
+    color: #fff;
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        h4 {
+            font-size: 2rem;
+            padding: 0.5rem 0;
+            color: #fff;
+        }
+        .icons .fab {
+            margin-left: 0.5rem;
+            padding: 0.8rem 0;
+            font-size: 1.4rem;
+            color: rgb(96, 218, 223);
+        }
+        li {
+            list-style: none;
+            line-height: 1.5;
+            font-size: 1.3rem;
+            a {
+                color: #fff;
+                &:hover {
+                    color: rgb(158, 124, 124);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#testimonial {
+    .testimonials {
+        background: linear-gradient( to right top, red, rgb(255, 123, 0), green, white);
+        height: 15rem;
+        .box {
+            padding: 3rem 2rem;
+        }
+        button {
+            font-size: 1.3rem;
+            margin: 0.8rem 0;
+            text-align: center;
+            background: rgb(27, 46, 216);
+            color: #fff;
+            width: 150px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            &:hover {
+                background: rgb(86, 122, 170);
+            }
+            .btn {
+                width: 60px;
+                height: 100%;
+                top: 0;
+                right: 0;
+                position: absolute;
+                .fas {
+                    font-size: 1.2rem;
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
